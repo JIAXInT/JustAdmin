@@ -6,6 +6,13 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { onMounted } from 'vue'
+import getHome from './service/modules/home'
+
+onMounted(() => {
+  getHome()
+})
+</script>
 
 <style scoped lang="scss"></style>
