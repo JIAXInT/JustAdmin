@@ -2,7 +2,13 @@
   // 继承Vue DOM环境的TypeScript配置
   "extends": "@vue/tsconfig/tsconfig.dom.json",
   // 包含的文件类型和路径
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  "include": [
+    "env.d.ts",
+    "src/**/*",
+    "src/**/*.vue",
+    "auto-imports.d.ts",
+    "components.d.ts"
+  ],
   // 排除测试文件
   "exclude": ["src/**/__tests__/*"],
   "compilerOptions": {
