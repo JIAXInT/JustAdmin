@@ -8,4 +8,7 @@ import registerIcons from './global/register-icons'
 import 'element-plus/dist/index.css'
 
 const app = createApp(App)
-app.use(registerIcons).use(router).use(pinia).mount('#app')
+app.use(registerIcons)
+app.use(pinia)
+app.use(router)
+app.mount('#app')
